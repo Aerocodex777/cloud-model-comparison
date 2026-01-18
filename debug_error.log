@@ -1,0 +1,35 @@
+Starting Debug
+DyRep Failed: GRUCell: Expected input to be 1D or 2D, got 3D instead
+Traceback (most recent call last):
+  File "C:\Users\Sreehari K\tgat_project\debug_real_file.py", line 31, in debug_real_data
+    out = model(x, edge_index, timestamps)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sreehari K\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sreehari K\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sreehari K\tgat_project\dyrep_model.py", line 155, in forward
+    node_states = layer(x, edge_index, timestamps, node_states)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sreehari K\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sreehari K\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sreehari K\tgat_project\dyrep_model.py", line 96, in forward
+    new_states[i] = self.node_update(
+                    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sreehari K\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sreehari K\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sreehari K\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\rnn.py", line 1795, in forward
+    raise ValueError(
+ValueError: GRUCell: Expected input to be 1D or 2D, got 3D instead
+
+EvolveGCN Success
